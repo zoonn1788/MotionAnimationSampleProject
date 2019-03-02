@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.MainActivity"
+        app:layoutDescription="@xml/collapsing_toolbar">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp" app:srcCompat="@drawable/beach_huts" android:id="@+id/toolbar_image"
+            android:adjustViewBounds="true" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:scaleType="center" android:contentDescription="@null"
+            android:fitsSystemWindows="true" android:background="@color/colorPrimary"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_black_24dp"
+            android:tint="?android:attr/textColorPrimaryInverse"
+            android:id="@android:id/home" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="PrivateResource"
+    />
+    <TextView
+            android:text="@string/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/title" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_image" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textSize="32sp" android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimaryInverse"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recyclerview" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/toolbar_image"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/navigation"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:menu="@menu/navigation"
+            app:itemBackground="@color/design_default_color_background"/>
+</androidx.constraintlayout.motion.widget.MotionLayout>

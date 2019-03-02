@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Bravoへ" android:id="@+id/chalrie_navigation_bravo"
+          android:icon="@drawable/ic_chevron_left_black_24dp"/>
+    <item android:title="AppBar" android:id="@+id/chalrie_navigation_appbar"
+          android:icon="@drawable/ic_photo_size_select_large_black_24dp"/>
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                      android:id="@+id/bravo_fragment_alpha_motion_layout"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent"
+                                                      app:layoutDescription="@xml/bravo_fragment_alpha_scene02"
+                                                      app:showPaths="true">
+    <TextView
+            android:id="@+id/bravo_fragment_alpha_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="Button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="8dp" android:background="@color/colorAccent"/>
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/bravo_fragment_alpha_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.50"
+            android:src="@drawable/ic_home_black_24dp"
+            app:altSrc="@drawable/ic_android_glay_24dp"
+            android:background="@color/colorAccent" android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

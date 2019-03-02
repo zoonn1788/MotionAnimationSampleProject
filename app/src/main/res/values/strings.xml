@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MotionAnimationSampleProject</string>
+    <string name="activity_name">Motion Layout</string>
+    <string name="activity_alpha_name">Motion Layout α</string>
+    <string name="title_blank">Blank</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_alpha">Alphaへ</string>
+    <string name="title_activity_bravo">BravoActivity</string>
+    <string name="title_activity_chalrie">ChalrieActivity</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                      xmlns:tools="http://schemas.android.com/tools"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent"
+                                                      tools:ignore="UnusedResource">
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar" android:id="@+id/recyclerview"
+            app:layout_constraintHorizontal_bias="0.0"
+            tools:ignore="PrivateResource"
+            app:layout_constraintBottom_toTopOf="@+id/activity_alpha_navigation"/>
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content"
+                                                     app:layout_constraintTop_toTopOf="parent"
+                                                     app:layout_constraintStart_toStartOf="parent"
+                                                     android:id="@+id/appbar"
+                                                     app:layout_constraintBottom_toBottomOf="parent"
+                                                     app:layout_constraintVertical_bias="0.0"
+                                                     android:fitsSystemWindows="true"
+                                                     android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent"
+                                                                    android:layout_height="200dp"
+                                                                    android:id="@+id/collapsing_toolbar"
+                                                                    android:fitsSystemWindows="true"
+                                                                    app:contentScrim="@color/colorPrimary"
+                                                                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                                                                    app:expandedTitleGravity="bottom"
+                                                                    app:expandedTitleMarginEnd="@dimen/activity_horizontal_margin"
+                                                                    app:expandedTitleMarginStart="@dimen/activity_horizontal_margin"
+                                                                    app:title="@string/activity_alpha_name">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/beach_huts"
+                    android:id="@+id/toolbar_image" android:adjustViewBounds="true" android:contentDescription="@null"
+                    android:scaleType="centerCrop" android:fitsSystemWindows="true"/>
+            <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:theme="?attr/actionBarTheme"
+                    android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar" app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:id="@+id/activity_alpha_navigation"
+            app:itemBackground="@color/design_default_color_background" app:menu="@menu/activity_alpha_navigation"/>
+</androidx.constraintlayout.motion.widget.MotionLayout>

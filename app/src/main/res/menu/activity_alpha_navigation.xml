@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="main" android:id="@+id/activity_alpha_navigation_main"
+          android:icon="@drawable/ic_chevron_left_black_24dp"/>
+    <item android:title="bravo" android:id="@+id/activity_alpha_navigation_bravo"
+          android:icon="@drawable/ic_chevron_right_black_24dp"/>
+</menu>

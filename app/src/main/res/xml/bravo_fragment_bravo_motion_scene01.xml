@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition app:constraintSetEnd="@layout/bravo_fragment_bravo_end"
+                app:constraintSetStart="@layout/bravo_fragment_bravo"
+                app:interpolator="linear"
+                app:duration="1000">
+        <OnClick app:target="@+id/bravo_fragment_bravo_fab"/>
+        <OnSwipe app:dragDirection="dragDown"
+                 app:touchAnchorId="@+id/bravo_fragment_bravo_linear_layout"
+                 app:touchAnchorSide="top"/>
+    </Transition>
+
+</MotionScene>

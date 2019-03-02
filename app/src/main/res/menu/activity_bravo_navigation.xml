@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/title_alpha" android:icon="@drawable/ic_chevron_left_black_24dp"
+          android:id="@+id/activity_bravo_navigation_alpha"/>
+    <item android:title="alpha_fragment" android:icon="@drawable/ic_trending_flat_black_24dp"
+          android:id="@+id/activity_bravo_navigation_item2"/>
+    <item android:title="linear_layout" android:icon="@drawable/ic_dashboard_black_24dp"
+          android:id="@+id/activity_bravo_navigation_item3"/>
+    <item android:title="image" android:icon="@android:drawable/ic_menu_mapmode"
+          android:id="@+id/activity_bravo_navigation_image"/>
+    <item android:title="Chalrie" android:id="@+id/activity_bravo_navigatin_chalrie"
+          android:icon="@drawable/ic_chevron_right_black_24dp"/>
+</menu>
